@@ -1,4 +1,4 @@
-const allButton = document.querySelectorAll(`.drum`);
+audioconst allButton = document.querySelectorAll(`.drum`);
 
 // Add click event
 allButton.forEach((ele) => {
@@ -21,25 +21,25 @@ function check(button) {
   let audio;
   switch (button) {
     case `w`:
-      document.querySelector(`.tom-1`).play();
+      document.querySelector(`#tom-1`).play();
       break;
     case `a`:
-      document.querySelector(`.tom-2`).play();
+      document.querySelector(`#tom-2`).play();
       break;
     case `s`:
-      document.querySelector(`.tom-3`).play();
+      document.querySelector(`#tom-3`).play();
       break;
     case `d`:
-      document.querySelector(`.tom-4`).play();
+      document.querySelector(`#tom-4`).play();
       break;
     case `j`:
-      document.querySelector(`.snare`).play();
+      document.querySelector(`#snare`).play();
       break;
     case `k`:
-      document.querySelector(`.kick-bass`).play();
+      document.querySelector(`#kick-bass`).play();
       break;
     case `l`:
-      document.querySelector(`.crash`).play();
+      document.querySelector(`#crash`).play();
       break;
     default:
       Error(`Not Found Audio`);
