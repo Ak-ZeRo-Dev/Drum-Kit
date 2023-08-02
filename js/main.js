@@ -21,32 +21,25 @@ function check(button) {
   let audio;
   switch (button) {
     case `w`:
-      audio = new Audio(`../sounds/tom-1.mp3`);
-      audio.play();
+      document.querySelector(`.tom-1`).play();
       break;
     case `a`:
-      audio = new Audio(`../sounds/tom-2.mp3`);
-      audio.play();
+      document.querySelector(`.tom-2`).play();
       break;
     case `s`:
-      audio = new Audio(`../sounds/tom-3.mp3`);
-      audio.play();
+      document.querySelector(`.tom-3`).play();
       break;
     case `d`:
-      audio = new Audio(`../sounds/tom-4.mp3`);
-      audio.play();
+      document.querySelector(`.tom-4`).play();
       break;
     case `j`:
-      audio = new Audio(`../sounds/snare.mp3`);
-      audio.play();
+      document.querySelector(`.snare`).play();
       break;
     case `k`:
-      audio = new Audio(`../sounds/kick-bass.mp3`);
-      audio.play();
+      document.querySelector(`.kick-bass`).play();
       break;
     case `l`:
-      audio = new Audio(`../sounds/crash.mp3`);
-      audio.play();
+      document.querySelector(`.crash`).play();
       break;
     default:
       Error(`Not Found Audio`);
