@@ -18,28 +18,27 @@ document.addEventListener(`keypress`, (e) => {
 
 // Check any key was pressed
 function check(button) {
-  let audio;
   switch (button) {
     case `w`:
-      document.querySelector(`#tom-1`).play();
+      document.getElementById(`tom-1`).play();
       break;
     case `a`:
-      document.querySelector(`#tom-2`).play();
+      document.getElementById(`tom-2`).play();
       break;
     case `s`:
-      document.querySelector(`#tom-3`).play();
+      document.getElementById(`tom-3`).play();
       break;
     case `d`:
-      document.querySelector(`#tom-4`).play();
+      document.getElementById(`tom-4`).play();
       break;
     case `j`:
-      document.querySelector(`#snare`).play();
+      document.getElementById(`snare`).play();
       break;
     case `k`:
-      document.querySelector(`#kick-bass`).play();
+      document.getElementById(`kick-bass`).play();
       break;
     case `l`:
-      document.querySelector(`#crash`).play();
+      document.getElementById(`crash`).play();
       break;
     default:
       Error(`Not Found Audio`);
