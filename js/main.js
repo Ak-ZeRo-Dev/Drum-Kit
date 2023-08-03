@@ -1,4 +1,4 @@
-audioconst allButton = document.querySelectorAll(`.drum`);
+const allButton = document.querySelectorAll(`.drum`);
 
 // Add click event
 allButton.forEach((ele) => {
